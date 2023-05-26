@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../style_1.css">
+<link rel="stylesheet" href="../style_2.css">
+<link rel="stylesheet" href="../style_3.css">
+</head>
+<body id="myPortfolio">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="../index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <a href="./about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Portfolio <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="./portfolio_muskets.html" class="w3-bar-item w3-button">Muskets</a>
+      <a href="./portfolio_boards.html" class="w3-bar-item w3-button">Surfboards</a>
+      <a href="./portfolio_engravings.html" class="w3-bar-item w3-button">Engravings</a>
+    </div>
+  </div> 
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">History</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">About</a>
+    <a href="#work" class="w3-bar-item w3-button">Portfolio</a>
+    <a href="#pricing" class="w3-bar-item w3-button">History</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="../images/laser_02.jpeg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To Home">Portfolio</button>
+  </div>
+</div>
+
+
+<div class="w3-container w3-padding-64 w3-center" id="muskets">
+<h2>OUR LASER ENGRAVINGS</h2>
+<p>Come up with your own engraving design!</p>
+
+
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+      * {box-sizing: border-box}
+      
+
+/* Slideshow container */
+      .carousel-container {
+         max-width: 33%;
+         position: relative;
+         margin: auto;
+      }
+
+      img {
+        vertical-align: middle;
+        position: relative;
+        margin: auto;
+        margin-top:0px;
+        width:100%;
+      }      
+      
+      /* Next & previous buttons */
+      .previous, .next {
+         cursor: pointer;
+         position: absolute;
+         top: middle;
+         width: auto;
+         padding: 16px;
+         margin-top: -22px;
+         color: black;
+         font-weight: bold;
+         font-size: 50px;
+         transition: 0.6s ease;
+         border-radius: 0 3px 3px 0;
+         user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+         right: -15%;
+         top: 50%;
+         border-radius: 3px 0 0 3px;
+      }
+      .previous {
+         left: -15%;
+         top:50%;
+         border-radius: 3px 0 0 3px;
+      }      
+      
+      
+      /* On hover, add a black background color with a little bit seethrough */
+      .previous:hover {
+         background-color: rgba(0,0,0,0.8);
+      }
+      .next:hover {
+         background-color: rgba(0,0,0,0.8);
+      }      
+      
+      
+      /* The dots/bullets/indicators */
+      .navigation-dot {
+         cursor: pointer;
+         height: 15px;
+         width: 15px;
+         margin: 0 2px;
+         background-color: #bbb;
+         border-radius: 50%;
+         display: inline-block;
+         transition: background-color 0.6s ease;
+      }
+      .active, .navigation-dot:hover {
+         background-color: #717171;
+      }
+   </style>
+</head>
+   <div class="carousel-container">
+      <div class="images fade">
+         <img src="../images/laser_04.jpeg">
+         </div>
+         <div class="images fade">
+            <img src="../images/laser_05.jpeg">
+         </div>
+         <div class="images fade">
+            <img src="../images/laser_06.jpeg">
+         </div>                 
+         
+         <!-- Previous and Next Buttons -->
+         <a class="previous" onclick="plusSlides(-1)">❮</a>
+         <a class="next" onclick="plusSlides(1)">❯</a>
+   </div>
+   <br>
+   
+   <!-- Navigation Dots-->
+   <div style="text-align:center">
+      <span class="navigation-dot" onclick="currentSlide(1)"></span>
+      <span class="navigation-dot" onclick="currentSlide(2)"></span>
+      <span class="navigation-dot" onclick="currentSlide(3)"></span>
+                     
+   </div>
+   <script>
+      var currentIndex = 1;
+      
+      //Show current image
+      showSlides(currentIndex);
+      
+      //Function to move Next
+      function plusSlides(n) {
+         showSlides(currentIndex += n);
+      }
+      
+      //Function to move back
+      function currentSlide(n) {
+         showSlides(currentIndex = n);
+      }
+      
+      
+      //Initiate moving of slides
+      function showSlides(n) {
+         var i;
+         var slides = document.getElementsByClassName("images");
+         var dots = document.getElementsByClassName("navigation-dot");
+         if (n > slides.length) {currentIndex = 1}
+         if (n < 1) {currentIndex = slides.length}
+         for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+         }
+         for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+         }
+         slides[currentIndex-1].style.display = "block";
+         dots[currentIndex-1].className += " active";
+      }
+   </script>
+
+</div>
+
+
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+      <h3>Address</h3>
+      <p>Swing by for a cup of coffee, or whatever.</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Chicago, US</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+      <div class="w3-section">      
+        <label>Name</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Message</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+      <input class="w3-check" type="checkbox" checked name="Like">
+      <label>I Like it!</label>
+      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</div>
